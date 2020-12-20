@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  max-width: 1600PX;
+  max-width: 1500PX;
   margin: auto;
 }
 
@@ -20,17 +22,45 @@ header {
   margin: 50px 0;
 }
 
+.title h1{
+    font-family: 'PT Serif',
+    serif;
+    font-weight: 700;
+}
+
 .about{
     width: 250px;
 }
 
+.about h4{
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about p{
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 400;
+    font-size:14px
+}
+
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px; 
 }
 
 img{
     max-width: 300px;
+}
+
+img h2{
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .img{
@@ -51,20 +81,30 @@ img{
    bottom: 200px;
    left: 120px;
    text-transform: uppercase;
-   font-weight: bold;
-   font-size: 18px;
+   font-family: 'PT Serif',
+   serif;
+   font-weight: 400;
+   font-size: 14px;
 }
 
 footer p{
     text-align: center;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 @media screen and (max-width:1200px){
+    .container{
+        width:80% !important;
+        margin: 0 auto;
+    }
     .img:nth-child(5) {
   margin:0; 
 }
     .img:nth-child(even) {
-  margin: 45px 0; 
+  margin: 45px 0 ; 
 }
 .role{
         font-size: 16px;
@@ -86,12 +126,21 @@ footer p{
         width: 75%;
     }
     .role{
-        font-size: 12px;
+        font-size: 10px;
         left: 30%;
         bottom: 100px;
     }
-    h2{
-        font-size: 16px;
+    .title h1{
+        font-size: 36px;
+    }
+    .img h2{
+        font-size: 14px;
+    }
+    .about h4{
+        font-size:18px
+    }
+    .about p{
+        font-size:12px
     }
     
     
